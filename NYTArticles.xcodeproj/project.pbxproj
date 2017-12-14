@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE1A1FE2D438006103AF /* AppDelegate.m */; };
-		3FBEDE211FE2D438006103AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE1F1FE2D438006103AF /* Main.storyboard */; };
 		3FBEDE231FE2D438006103AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE221FE2D438006103AF /* Assets.xcassets */; };
-		3FBEDE261FE2D438006103AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE241FE2D438006103AF /* LaunchScreen.storyboard */; };
 		3FBEDE291FE2D438006103AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE281FE2D438006103AF /* main.m */; };
+		3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */; };
+		3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FBEDE161FE2D438006103AF /* NYTArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBEDE191FE2D438006103AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FBEDE1A1FE2D438006103AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FBEDE201FE2D438006103AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBEDE221FE2D438006103AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FBEDE251FE2D438006103AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBEDE271FE2D438006103AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBEDE281FE2D438006103AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 			children = (
 				3FBEDE191FE2D438006103AF /* AppDelegate.h */,
 				3FBEDE1A1FE2D438006103AF /* AppDelegate.m */,
-				3FBEDE1F1FE2D438006103AF /* Main.storyboard */,
+				3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */,
 				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
-				3FBEDE241FE2D438006103AF /* LaunchScreen.storyboard */,
+				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
 				3FBEDE271FE2D438006103AF /* Info.plist */,
 				3FBEDE281FE2D438006103AF /* main.m */,
 			);
@@ -107,7 +107,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 3FBEDE0D1FE2D438006103AF;
 			productRefGroup = 3FBEDE171FE2D438006103AF /* Products */;
@@ -124,9 +123,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBEDE261FE2D438006103AF /* LaunchScreen.storyboard in Resources */,
+				3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */,
 				3FBEDE231FE2D438006103AF /* Assets.xcassets in Resources */,
-				3FBEDE211FE2D438006103AF /* Main.storyboard in Resources */,
+				3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,25 +142,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3FBEDE1F1FE2D438006103AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FBEDE201FE2D438006103AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3FBEDE241FE2D438006103AF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FBEDE251FE2D438006103AF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3FBEDE2A1FE2D438006103AF /* Debug */ = {
