@@ -105,6 +105,7 @@
 				3FBEDE141FE2D438006103AF /* Resources */,
 				1614A88B1AB9375E0DE01E63 /* [CP] Embed Pods Frameworks */,
 				DCF1FFA7F0F10A16CDCF6685 /* [CP] Copy Pods Resources */,
+				3FBEDE351FE2DDAC006103AF /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -188,6 +189,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3FBEDE351FE2DDAC006103AF /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3b11aabfc9db925ab17b901d6b1de68a454b9939 1c09b3cb6a862dc05344a804703342ea9d98f929a9687bf595ac7e140a3a75e9\n";
 		};
 		DCF1FFA7F0F10A16CDCF6685 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
