@@ -23,6 +23,7 @@
 		3FBEDE281FE2D438006103AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FBEDE331FE2D9B8006103AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 		3FBEDE0D1FE2D438006103AF = {
 			isa = PBXGroup;
 			children = (
+				3FBEDE331FE2D9B8006103AF /* README.md */,
 				3FBEDE181FE2D438006103AF /* NYTArticles */,
 				3FBEDE171FE2D438006103AF /* Products */,
 			);
