@@ -19,7 +19,7 @@
 		0465F6442AB59A355B61238A /* Pods-NYTArticles.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release dev.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release dev.xcconfig"; sourceTree = "<group>"; };
 		197679B022FA8DEBB68FA10A /* Pods-NYTArticles.debug mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.debug mock.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.debug mock.xcconfig"; sourceTree = "<group>"; };
 		1D0B1049843AD4FF65FE5F2E /* Pods-NYTArticles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release.xcconfig"; sourceTree = "<group>"; };
-		3FBEDE161FE2D438006103AF /* NYTArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBEDE161FE2D438006103AF /* Dev-NYTArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev-NYTArticles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBEDE191FE2D438006103AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FBEDE1A1FE2D438006103AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3FBEDE221FE2D438006103AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		3FBEDE171FE2D438006103AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEDE161FE2D438006103AF /* NYTArticles.app */,
+				3FBEDE161FE2D438006103AF /* Dev-NYTArticles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			);
 			name = NYTArticles;
 			productName = NYTArticles;
-			productReference = 3FBEDE161FE2D438006103AF /* NYTArticles.app */;
+			productReference = 3FBEDE161FE2D438006103AF /* Dev-NYTArticles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "-dev";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -315,6 +316,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME_PREFIX = "Dev-";
 				SDKROOT = iphoneos;
 			};
 			name = "Debug Dev";
@@ -323,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "-dev";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -363,6 +366,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME_PREFIX = "Dev-";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -376,8 +380,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Debug Dev";
@@ -390,8 +394,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Release Dev";
@@ -400,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "-mock";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -447,6 +452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME_PREFIX = "Mock-";
 				SDKROOT = iphoneos;
 			};
 			name = "Debug Mock";
@@ -459,8 +465,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Debug Mock";
@@ -469,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "-mock";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -509,6 +516,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME_PREFIX = "Mock-";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -522,8 +530,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Release Mock";
@@ -532,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -579,6 +588,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME_PREFIX = "";
 				SDKROOT = iphoneos;
 			};
 			name = "Debug Production";
@@ -591,8 +601,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Debug Production";
@@ -601,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -641,6 +652,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME_PREFIX = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -654,8 +666,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NYTArticles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nyt.NYTArticles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Release Production";
