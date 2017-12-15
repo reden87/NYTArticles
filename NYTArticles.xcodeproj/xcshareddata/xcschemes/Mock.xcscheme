@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FBEDE151FE2D438006103AF"
-               BuildableName = "NYTArticles.app"
+               BuildableName = "Dev-NYTArticles.app"
                BlueprintName = "NYTArticles"
                ReferencedContainer = "container:NYTArticles.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FBEDE151FE2D438006103AF"
-            BuildableName = "NYTArticles.app"
+            BuildableName = "Dev-NYTArticles.app"
             BlueprintName = "NYTArticles"
             ReferencedContainer = "container:NYTArticles.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FBEDE151FE2D438006103AF"
-            BuildableName = "NYTArticles.app"
+            BuildableName = "Dev-NYTArticles.app"
             BlueprintName = "NYTArticles"
             ReferencedContainer = "container:NYTArticles.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FBEDE151FE2D438006103AF"
-            BuildableName = "NYTArticles.app"
+            BuildableName = "Dev-NYTArticles.app"
             BlueprintName = "NYTArticles"
             ReferencedContainer = "container:NYTArticles.xcodeproj">
          </BuildableReference>

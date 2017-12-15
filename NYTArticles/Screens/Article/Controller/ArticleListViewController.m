@@ -31,6 +31,8 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = NSLocalizedString(@"NY Times Most Popular", nil);
+    
     [self setupDataManager];
     [self setupTableView];
     [self loadData];
