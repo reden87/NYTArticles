@@ -34,6 +34,7 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
     self.title = NSLocalizedString(@"NY Times Most Popular", nil);
     
     [self setupDataManager];
+    [self setupNavigationBar];
     [self setupTableView];
     [self loadData];
 }
@@ -46,6 +47,25 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
     // should be loaded with dependency injection. This way we can easily use the data manager class we have now
     // or we can use an ArticleMockDataManager instance in case of Mock environment.
     self.dataManager = [ArticleDataManager sharedInstance];
+}
+
+- (void)setupNavigationBar
+{
+    UIImage *menuImage = [UIImage imageNamed:@"menuIcon"];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:menuImage
+                                                                             style:UIBarButtonItemStyleDone
+                                                                            target:self
+                                                                            action:@selector(menuButtonPressed)];
+    
+    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchButtonPressed)];
+    
+    UIImage *verticalMenuImage = [UIImage imageNamed:@"verticalMenuIcon"];
+    UIBarButtonItem *verticalMenuButton = [[UIBarButtonItem alloc] initWithImage:verticalMenuImage
+                                                                           style:UIBarButtonItemStyleDone
+                                                                          target:self
+                                                                          action:@selector(verticalMenuTapped)];
+    
+    self.navigationItem.rightBarButtonItems = @[verticalMenuButton, searchButton];
 }
 
 - (void)setupTableView
@@ -98,7 +118,24 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    NSLog(@"tableView:didSelectRowAtIndexPath:");
+}
+
+#pragma mark - Actions
+
+- (void)menuButtonPressed
+{
+    NSLog(@"menuButtonPressed");
+}
+
+- (void)searchButtonPressed
+{
+    NSLog(@"searchButtonPressed");
+}
+
+- (void)verticalMenuTapped
+{
+    NSLog(@"verticalMenuTapped");
 }
 
 @end

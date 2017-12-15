@@ -142,7 +142,6 @@
 		3FBEDE401FE3BEFD006103AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEDE421FE3BF34006103AF /* Fonts */,
 				3FBEDE411FE3BF04006103AF /* Images */,
 			);
 			path = Resources;
@@ -154,13 +153,6 @@
 				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		3FBEDE421FE3BF34006103AF /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3FBEDE431FE3C230006103AF /* Networking */ = {
