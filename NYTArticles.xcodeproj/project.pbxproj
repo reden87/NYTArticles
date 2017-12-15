@@ -12,6 +12,9 @@
 		3FBEDE291FE2D438006103AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE281FE2D438006103AF /* main.m */; };
 		3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */; };
 		3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */; };
+		3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE4C1FE3D001006103AF /* NetworkManager.m */; };
+		3FBEDE531FE3D0E8006103AF /* ArticleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE521FE3D0E8006103AF /* ArticleList.m */; };
+		3FBEDE561FE3D0F3006103AF /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE551FE3D0F3006103AF /* Article.m */; };
 		E1281493C23AF9C2C29DDC8A /* Pods_NYTArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,12 @@
 		3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBEDE331FE2D9B8006103AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FBEDE4B1FE3D001006103AF /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		3FBEDE4C1FE3D001006103AF /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		3FBEDE511FE3D0E8006103AF /* ArticleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleList.h; sourceTree = "<group>"; };
+		3FBEDE521FE3D0E8006103AF /* ArticleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleList.m; sourceTree = "<group>"; };
+		3FBEDE541FE3D0F3006103AF /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		3FBEDE551FE3D0F3006103AF /* Article.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		511C87317D0C3C12D270A2DB /* Pods-NYTArticles.release mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release mock.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release mock.xcconfig"; sourceTree = "<group>"; };
 		72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTArticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A397EDE1A3618E73F3AE1BE1 /* Pods-NYTArticles.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release production.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release production.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +134,38 @@
 		3FBEDE431FE3C230006103AF /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3FBEDE4B1FE3D001006103AF /* NetworkManager.h */,
+				3FBEDE4C1FE3D001006103AF /* NetworkManager.m */,
+				3FBEDE4E1FE3D005006103AF /* RequestObjects */,
+				3FBEDE4F1FE3D015006103AF /* ResponseObjects */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		3FBEDE4E1FE3D005006103AF /* RequestObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestObjects;
+			sourceTree = "<group>";
+		};
+		3FBEDE4F1FE3D015006103AF /* ResponseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE501FE3D06C006103AF /* Article */,
+			);
+			path = ResponseObjects;
+			sourceTree = "<group>";
+		};
+		3FBEDE501FE3D06C006103AF /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE511FE3D0E8006103AF /* ArticleList.h */,
+				3FBEDE521FE3D0E8006103AF /* ArticleList.m */,
+				3FBEDE541FE3D0F3006103AF /* Article.h */,
+				3FBEDE551FE3D0F3006103AF /* Article.m */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 		6C5202FF71A110553092A1BA /* Frameworks */ = {
@@ -304,7 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBEDE561FE3D0F3006103AF /* Article.m in Sources */,
+				3FBEDE531FE3D0E8006103AF /* ArticleList.m in Sources */,
 				3FBEDE291FE2D438006103AF /* main.m in Sources */,
+				3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */,
 				3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
