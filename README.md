@@ -1,10 +1,10 @@
-#NYTArticles
+# NYTArticles
 
 This is a simple application which downloads the NY Times Most Popular Articles API and shows a list of articles. Also shows a detail screen when the list items are tapped.
 
 Although it's a simple app I tried to demonstrate a more robust architecture which I'd use in a large scale application. You can read about the features and some improvement ideas below.
 
-##How to run the project
+## How to run the project
 
 The project dependencies can be installed via Bundler:
 
@@ -22,9 +22,9 @@ pod install
 
 After this you're good to go, open the `NYTArticles.xcworkspace` file in Xcode and run the project.
 
-##Features
+## Features
 
-###Multiple schemes
+### Multiple schemes
 
 Every scheme has it's own role in the development process. In this project every scheme has different bundle identifier which is useful because this way the user can install multiple environments to his phone simultaneously. Also each scheme has a product name prefix so we can differentiate the apps when all of them installed. This setup is also useful because this way the in-house beta build analytics and crashes are separated from the production application's data in Fabric.
 
@@ -34,19 +34,19 @@ Every scheme has it's own role in the development process. In this project every
 
 **Production:** Connects to the production server.
 
-###Separated application layers
+### Separated application layers
 
 When I created the app my goal was to aim for an architecture which is suitable for a whole team.
 
 Different screens / screen groups can be found in different folders for the sake of better navigation in the project structure.
 
-##Improvement ideas
+## Improvement ideas
 
-###Dependency injection
+### Dependency injection
 
 To every screen we should inject the data manager instances and navigator objects with dependency injection. We should use lazy initialisation here which means that the instance of a class is initialised only when it's used for the first time. With this approach the application would start faster because the dependency injection system does not instantiates every unnecessary class when the application starts.
 
-###Tests
+### Tests
 
 In the mock environment we can write UI tests which is handy to test if there's no crash in the application and every screen is available. Also with UI tests it's very easy to make sure that form validations are working correctly and the submit button on the screen only becomes active if all the necessary criteria is fine.
 
@@ -54,19 +54,19 @@ In mock environment we can also increase the system animation speed which could 
 
 Also we could write unit tests to test client side logic and integration tests. Integration tests are good to make sure that for a certain input our data manager layer generates correct output and it works fine.
 
-###Navigator
+### Navigator
 
 In this project I only used `self.navigationController` to navigate between screens but it would be a better practice to implement a navigator object. The navigator instance would be injected to every screen. It would use some identifier parameter which would identify a screen and also a parameter object. The navigator would instantiate the ViewController which is necessary and would pass the parameter object to it. This is how I'd pass parameter between screens.
 
-###Clean up data manager implementation
+### Clean up data manager implementation
 
 In this project I mapped server response objects to view model objects in the data manager layer. In large project this would decrease the readability of the data manager. It would be a better practice to move the mapping to a response model category.
 
-###Remove NSLog calls
+### Remove NSLog calls
 
 It's not recommended to use NSLog in production applications, all NSLog should be changed to a logging system where we can set the log level and use descriptive logging only for development or debug environments.
 
-###CI server
+### CI server
 
 Even for smaller applications it's recommended to set up a CI server. I'd use Jenkins with Fastlane and Danger.
 
