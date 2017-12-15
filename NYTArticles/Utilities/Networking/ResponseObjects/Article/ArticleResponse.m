@@ -6,9 +6,9 @@
 //  Copyright © 2017. Gergo Nemeth. All rights reserved.
 //
 
-#import "Article.h"
+#import "ArticleResponse.h"
 
-@implementation Article
+@implementation ArticleResponse
 
 #pragma mark - key mapping
 

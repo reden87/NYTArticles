@@ -11,6 +11,9 @@
 #import <Crashlytics/Crashlytics.h>
 #import <JSONModel/JSONModel.h>
 
+static NSString * const baseURL = @"https://api.nytimes.com/svc/mostpopular/v2/";
+static NSString * const tokenSuffix = @"?api-key=5cf6665b021a48979dcf2e0cd5bfadbc";
+
 @implementation NetworkManager
 
 #pragma mark - Singleton
@@ -27,7 +30,7 @@
 
 #pragma mark - Networking
 
-- (void)GET:(NSString *)api
+- (void)GET:(NSString *)apiUrl
 responseClass:(Class)responseClass
     success:(void(^)(id result))successBlock
       error:(void(^)(NSError *error))errorBlock
@@ -38,12 +41,15 @@ responseClass:(Class)responseClass
     
     // set custom headers if necessary
     
-    NSLog(@"ℹ️[POST] %@", api);
-    [manager GET:api parameters:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"ℹ️[POST] %@ SUCCESS: %@", api, responseObject);
-        
+    NSString *fullUrl = [baseURL stringByAppendingString:apiUrl];
+    fullUrl = [fullUrl stringByAppendingString:tokenSuffix];
+    
+    NSLog(@"ℹ️[POST] %@", apiUrl);
+    [manager GET:fullUrl parameters:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSError *error;
         JSONModel *response = [[responseClass alloc] initWithData:responseObject error:&error];
+        
+        NSLog(@"ℹ️[POST] %@ SUCCESS: %@", apiUrl, response);
         
         if (!error)
         {
@@ -60,8 +66,8 @@ responseClass:(Class)responseClass
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSString *responseString = [[NSString alloc] initWithData:error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding];
-        NSLog(@"⚠️[POST] %@ server response: %@", api, responseString);
-        NSLog(@"⚠️[POST] %@ error: %@", api, error);
+        NSLog(@"⚠️[POST] %@ server response: %@", apiUrl, responseString);
+        NSLog(@"⚠️[POST] %@ error: %@", apiUrl, error);
         
         NSUInteger statusCode = 0;
         if ([task.response isKindOfClass:[NSHTTPURLResponse class]]) {

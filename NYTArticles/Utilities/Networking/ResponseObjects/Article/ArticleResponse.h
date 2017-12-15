@@ -1,5 +1,5 @@
 //
-//  Article.h
+//  ArticleResponse.h
 //  NYTArticles
 //
 //  Created by Gergo Nemeth on 2017. 12. 15..
@@ -8,12 +8,15 @@
 
 #import <JSONModel/JSONModel.h>
 
-@interface Article : JSONModel
+@protocol MediaResponse;
+
+@interface ArticleResponse : JSONModel
 
 @property (nonatomic, strong) NSNumber *articleId;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *author;
 @property (nonatomic, strong) NSString *publishDate;
+//@property (nonatomic, strong) NSArray<MediaResponse> *media;
 @property (nonatomic, strong) NSURL *url;
 
 @end

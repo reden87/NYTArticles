@@ -16,7 +16,7 @@
 
 #pragma mark - Networking
 
-- (void)GET:(NSString *)api
+- (void)GET:(NSString *)apiUrl
 responseClass:(Class)responseClass
     success:(void(^)(id result))successBlock
       error:(void(^)(NSError *error))errorBlock;

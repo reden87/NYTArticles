@@ -13,8 +13,16 @@
 		3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */; };
 		3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */; };
 		3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE4C1FE3D001006103AF /* NetworkManager.m */; };
-		3FBEDE531FE3D0E8006103AF /* ArticleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE521FE3D0E8006103AF /* ArticleList.m */; };
-		3FBEDE561FE3D0F3006103AF /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE551FE3D0F3006103AF /* Article.m */; };
+		3FBEDE531FE3D0E8006103AF /* ArticleListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */; };
+		3FBEDE561FE3D0F3006103AF /* ArticleResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */; };
+		3FBEDE631FE3DDDB006103AF /* ArticleDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */; };
+		3FBEDE661FE3DDEB006103AF /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */; };
+		3FBEDE691FE3DDF6006103AF /* ArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */; };
+		3FBEDE721FE3E4D8006103AF /* ArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */; };
+		3FBEDE731FE3E4D8006103AF /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */; };
+		3FBEDE761FE3EECF006103AF /* MediaMetadataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */; };
+		3FBEDE791FE3EF21006103AF /* MediaResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE781FE3EF21006103AF /* MediaResponse.m */; };
+		3FBEDE7D1FE3F0BD006103AF /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */; };
 		E1281493C23AF9C2C29DDC8A /* Pods_NYTArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +41,26 @@
 		3FBEDE331FE2D9B8006103AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3FBEDE4B1FE3D001006103AF /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		3FBEDE4C1FE3D001006103AF /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		3FBEDE511FE3D0E8006103AF /* ArticleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleList.h; sourceTree = "<group>"; };
-		3FBEDE521FE3D0E8006103AF /* ArticleList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleList.m; sourceTree = "<group>"; };
-		3FBEDE541FE3D0F3006103AF /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
-		3FBEDE551FE3D0F3006103AF /* Article.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		3FBEDE511FE3D0E8006103AF /* ArticleListResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListResponse.h; sourceTree = "<group>"; };
+		3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListResponse.m; sourceTree = "<group>"; };
+		3FBEDE541FE3D0F3006103AF /* ArticleResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleResponse.h; sourceTree = "<group>"; };
+		3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleResponse.m; sourceTree = "<group>"; };
+		3FBEDE611FE3DDDB006103AF /* ArticleDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDataManager.h; sourceTree = "<group>"; };
+		3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleDataManager.m; sourceTree = "<group>"; };
+		3FBEDE641FE3DDEB006103AF /* ArticleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		3FBEDE671FE3DDF6006103AF /* ArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
+		3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleDetailViewController.m; sourceTree = "<group>"; };
+		3FBEDE6A1FE3DE26006103AF /* ArticleDataManagerInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDataManagerInterface.h; sourceTree = "<group>"; };
+		3FBEDE6F1FE3E4D8006103AF /* ArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleTableViewCell.h; sourceTree = "<group>"; };
+		3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleTableViewCell.m; sourceTree = "<group>"; };
+		3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		3FBEDE741FE3EECF006103AF /* MediaMetadataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaMetadataResponse.h; sourceTree = "<group>"; };
+		3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaMetadataResponse.m; sourceTree = "<group>"; };
+		3FBEDE771FE3EF21006103AF /* MediaResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaResponse.h; sourceTree = "<group>"; };
+		3FBEDE781FE3EF21006103AF /* MediaResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaResponse.m; sourceTree = "<group>"; };
+		3FBEDE7B1FE3F0BD006103AF /* ArticleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleModel.h; sourceTree = "<group>"; };
+		3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleModel.m; sourceTree = "<group>"; };
 		511C87317D0C3C12D270A2DB /* Pods-NYTArticles.release mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release mock.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release mock.xcconfig"; sourceTree = "<group>"; };
 		72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTArticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A397EDE1A3618E73F3AE1BE1 /* Pods-NYTArticles.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release production.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release production.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				3FBEDE3E1FE3BEDF006103AF /* Application */,
-				3FBEDE431FE3C230006103AF /* Networking */,
+				3FBEDE5A1FE3DB21006103AF /* Utilities */,
+				3FBEDE5C1FE3DB7F006103AF /* Screens */,
 				3FBEDE401FE3BEFD006103AF /* Resources */,
-				3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */,
-				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
 			);
 			path = NYTArticles;
 			sourceTree = "<group>";
@@ -160,12 +183,85 @@
 		3FBEDE501FE3D06C006103AF /* Article */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEDE511FE3D0E8006103AF /* ArticleList.h */,
-				3FBEDE521FE3D0E8006103AF /* ArticleList.m */,
-				3FBEDE541FE3D0F3006103AF /* Article.h */,
-				3FBEDE551FE3D0F3006103AF /* Article.m */,
+				3FBEDE511FE3D0E8006103AF /* ArticleListResponse.h */,
+				3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */,
+				3FBEDE541FE3D0F3006103AF /* ArticleResponse.h */,
+				3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */,
+				3FBEDE771FE3EF21006103AF /* MediaResponse.h */,
+				3FBEDE781FE3EF21006103AF /* MediaResponse.m */,
+				3FBEDE741FE3EECF006103AF /* MediaMetadataResponse.h */,
+				3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		3FBEDE5A1FE3DB21006103AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE431FE3C230006103AF /* Networking */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3FBEDE5C1FE3DB7F006103AF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
+				3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */,
+				3FBEDE5D1FE3DB8B006103AF /* Article */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3FBEDE5D1FE3DB8B006103AF /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE5F1FE3DDB0006103AF /* DataManager */,
+				3FBEDE7A1FE3F0AD006103AF /* ViewModel */,
+				3FBEDE6E1FE3E4BC006103AF /* View */,
+				3FBEDE601FE3DDB6006103AF /* Controller */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		3FBEDE5F1FE3DDB0006103AF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE6A1FE3DE26006103AF /* ArticleDataManagerInterface.h */,
+				3FBEDE611FE3DDDB006103AF /* ArticleDataManager.h */,
+				3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3FBEDE601FE3DDB6006103AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE641FE3DDEB006103AF /* ArticleListViewController.h */,
+				3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */,
+				3FBEDE671FE3DDF6006103AF /* ArticleDetailViewController.h */,
+				3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FBEDE6E1FE3E4BC006103AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE6F1FE3E4D8006103AF /* ArticleTableViewCell.h */,
+				3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */,
+				3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FBEDE7A1FE3F0AD006103AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE7B1FE3F0BD006103AF /* ArticleModel.h */,
+				3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6C5202FF71A110553092A1BA /* Frameworks */ = {
@@ -221,6 +317,7 @@
 		3FBEDE0E1FE2D438006103AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NYT;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Gergo Nemeth";
 				TargetAttributes = {
@@ -252,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBEDE731FE3E4D8006103AF /* ArticleTableViewCell.xib in Resources */,
 				3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */,
 				3FBEDE231FE2D438006103AF /* Assets.xcassets in Resources */,
 				3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */,
@@ -343,11 +441,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FBEDE561FE3D0F3006103AF /* Article.m in Sources */,
-				3FBEDE531FE3D0E8006103AF /* ArticleList.m in Sources */,
+				3FBEDE631FE3DDDB006103AF /* ArticleDataManager.m in Sources */,
+				3FBEDE761FE3EECF006103AF /* MediaMetadataResponse.m in Sources */,
+				3FBEDE7D1FE3F0BD006103AF /* ArticleModel.m in Sources */,
+				3FBEDE561FE3D0F3006103AF /* ArticleResponse.m in Sources */,
+				3FBEDE531FE3D0E8006103AF /* ArticleListResponse.m in Sources */,
 				3FBEDE291FE2D438006103AF /* main.m in Sources */,
+				3FBEDE661FE3DDEB006103AF /* ArticleListViewController.m in Sources */,
 				3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */,
+				3FBEDE691FE3DDF6006103AF /* ArticleDetailViewController.m in Sources */,
+				3FBEDE721FE3E4D8006103AF /* ArticleTableViewCell.m in Sources */,
 				3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */,
+				3FBEDE791FE3EF21006103AF /* MediaResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

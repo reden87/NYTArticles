@@ -1,21 +1,21 @@
 //
-//  ArticleList.m
+//  MediaResponse.m
 //  NYTArticles
 //
 //  Created by Gergo Nemeth on 2017. 12. 15..
 //  Copyright © 2017. Gergo Nemeth. All rights reserved.
 //
 
-#import "ArticleList.h"
+#import "MediaResponse.h"
 
-@implementation ArticleList
+@implementation MediaResponse
 
 #pragma mark - key mapping
 
 + (JSONKeyMapper *)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{
-                                                                  @"articleList": @"results",
+                                                                  @"metadata": @"media-metadata",
                                                                   }];
 }
 
