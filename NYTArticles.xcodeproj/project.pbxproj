@@ -70,15 +70,63 @@
 		3FBEDE181FE2D438006103AF /* NYTArticles */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEDE191FE2D438006103AF /* AppDelegate.h */,
-				3FBEDE1A1FE2D438006103AF /* AppDelegate.m */,
+				3FBEDE3E1FE3BEDF006103AF /* Application */,
+				3FBEDE431FE3C230006103AF /* Networking */,
+				3FBEDE401FE3BEFD006103AF /* Resources */,
 				3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */,
-				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
 				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
-				3FBEDE271FE2D438006103AF /* Info.plist */,
-				3FBEDE281FE2D438006103AF /* main.m */,
 			);
 			path = NYTArticles;
+			sourceTree = "<group>";
+		};
+		3FBEDE3E1FE3BEDF006103AF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE191FE2D438006103AF /* AppDelegate.h */,
+				3FBEDE1A1FE2D438006103AF /* AppDelegate.m */,
+				3FBEDE271FE2D438006103AF /* Info.plist */,
+				3FBEDE3F1FE3BEED006103AF /* Supporting Files */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3FBEDE3F1FE3BEED006103AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE281FE2D438006103AF /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FBEDE401FE3BEFD006103AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE421FE3BF34006103AF /* Fonts */,
+				3FBEDE411FE3BF04006103AF /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FBEDE411FE3BF04006103AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3FBEDE421FE3BF34006103AF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3FBEDE431FE3C230006103AF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		6C5202FF71A110553092A1BA /* Frameworks */ = {
@@ -378,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -392,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -463,7 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -528,7 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -599,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -664,7 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
