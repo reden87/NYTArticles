@@ -24,14 +24,6 @@ PODS:
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
   - SVProgressHUD (2.2.2)
-  - Typhoon (4.0.3):
-    - Typhoon/DeallocNotifier (= 4.0.3)
-    - Typhoon/IntrospectionUtils (= 4.0.3)
-    - Typhoon/no-arc (= 4.0.3)
-  - Typhoon/DeallocNotifier (4.0.3)
-  - Typhoon/IntrospectionUtils (4.0.3)
-  - Typhoon/no-arc (4.0.3):
-    - Typhoon/IntrospectionUtils
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1)
@@ -42,7 +34,6 @@ DEPENDENCIES:
   - ObjectiveSugar (~> 1.1)
   - SDWebImage (~> 4.2)
   - SVProgressHUD (~> 2.2)
-  - Typhoon (~> 4.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -53,8 +44,7 @@ SPEC CHECKSUMS:
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
-  Typhoon: 85d1a7ada9a7def46a374be1301540572cc53636
 
-PODFILE CHECKSUM: 1aac691054b0d817b41913450572acba53042b71
+PODFILE CHECKSUM: 9f989f152a114a87b9d9b86ac3a2ac65309ddada
 
 COCOAPODS: 1.3.1
