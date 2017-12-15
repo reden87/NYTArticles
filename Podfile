@@ -16,6 +16,7 @@ def shared_pods
     pod 'ObjectiveSugar', '~> 1.1' # Objective-C Foundation helper methods
     pod 'SDWebImage', '~> 4.2'
     pod 'SVProgressHUD', '~> 2.2'
+    pod 'HexColors', '~> 4.0'
 end
 
 

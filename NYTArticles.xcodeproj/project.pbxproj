@@ -10,8 +10,23 @@
 		3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE1A1FE2D438006103AF /* AppDelegate.m */; };
 		3FBEDE231FE2D438006103AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE221FE2D438006103AF /* Assets.xcassets */; };
 		3FBEDE291FE2D438006103AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE281FE2D438006103AF /* main.m */; };
-		3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */; };
 		3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */; };
+		3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE4C1FE3D001006103AF /* NetworkManager.m */; };
+		3FBEDE531FE3D0E8006103AF /* ArticleListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */; };
+		3FBEDE561FE3D0F3006103AF /* ArticleResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */; };
+		3FBEDE631FE3DDDB006103AF /* ArticleDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */; };
+		3FBEDE661FE3DDEB006103AF /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */; };
+		3FBEDE691FE3DDF6006103AF /* ArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */; };
+		3FBEDE721FE3E4D8006103AF /* ArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */; };
+		3FBEDE731FE3E4D8006103AF /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */; };
+		3FBEDE761FE3EECF006103AF /* MediaMetadataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */; };
+		3FBEDE791FE3EF21006103AF /* MediaResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE781FE3EF21006103AF /* MediaResponse.m */; };
+		3FBEDE7D1FE3F0BD006103AF /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */; };
+		3FBEDE831FE4000B006103AF /* NYTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE821FE4000B006103AF /* NYTNavigationController.m */; };
+		3FBEDE861FE401D8006103AF /* ArticleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE851FE401D8006103AF /* ArticleListViewController.xib */; };
+		3FBEDE881FE402A4006103AF /* ArticleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE871FE402A4006103AF /* ArticleDetailViewController.xib */; };
+		3FBEDE8D1FE4038C006103AF /* UIColor+NYTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */; };
+		3FBEDE911FE41A81006103AF /* NYTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE901FE41A81006103AF /* NYTViewController.m */; };
 		E1281493C23AF9C2C29DDC8A /* Pods_NYTArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +40,38 @@
 		3FBEDE221FE2D438006103AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBEDE271FE2D438006103AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBEDE281FE2D438006103AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBEDE331FE2D9B8006103AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FBEDE4B1FE3D001006103AF /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		3FBEDE4C1FE3D001006103AF /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		3FBEDE511FE3D0E8006103AF /* ArticleListResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListResponse.h; sourceTree = "<group>"; };
+		3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListResponse.m; sourceTree = "<group>"; };
+		3FBEDE541FE3D0F3006103AF /* ArticleResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleResponse.h; sourceTree = "<group>"; };
+		3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleResponse.m; sourceTree = "<group>"; };
+		3FBEDE611FE3DDDB006103AF /* ArticleDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDataManager.h; sourceTree = "<group>"; };
+		3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleDataManager.m; sourceTree = "<group>"; };
+		3FBEDE641FE3DDEB006103AF /* ArticleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		3FBEDE671FE3DDF6006103AF /* ArticleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
+		3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleDetailViewController.m; sourceTree = "<group>"; };
+		3FBEDE6A1FE3DE26006103AF /* ArticleDataManagerInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleDataManagerInterface.h; sourceTree = "<group>"; };
+		3FBEDE6F1FE3E4D8006103AF /* ArticleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleTableViewCell.h; sourceTree = "<group>"; };
+		3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleTableViewCell.m; sourceTree = "<group>"; };
+		3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		3FBEDE741FE3EECF006103AF /* MediaMetadataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaMetadataResponse.h; sourceTree = "<group>"; };
+		3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaMetadataResponse.m; sourceTree = "<group>"; };
+		3FBEDE771FE3EF21006103AF /* MediaResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaResponse.h; sourceTree = "<group>"; };
+		3FBEDE781FE3EF21006103AF /* MediaResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaResponse.m; sourceTree = "<group>"; };
+		3FBEDE7B1FE3F0BD006103AF /* ArticleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleModel.h; sourceTree = "<group>"; };
+		3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleModel.m; sourceTree = "<group>"; };
+		3FBEDE811FE4000B006103AF /* NYTNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTNavigationController.h; sourceTree = "<group>"; };
+		3FBEDE821FE4000B006103AF /* NYTNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTNavigationController.m; sourceTree = "<group>"; };
+		3FBEDE851FE401D8006103AF /* ArticleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListViewController.xib; sourceTree = "<group>"; };
+		3FBEDE871FE402A4006103AF /* ArticleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDetailViewController.xib; sourceTree = "<group>"; };
+		3FBEDE8B1FE4038C006103AF /* UIColor+NYTColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+NYTColors.h"; sourceTree = "<group>"; };
+		3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NYTColors.m"; sourceTree = "<group>"; };
+		3FBEDE8F1FE41A81006103AF /* NYTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTViewController.h; sourceTree = "<group>"; };
+		3FBEDE901FE41A81006103AF /* NYTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTViewController.m; sourceTree = "<group>"; };
 		511C87317D0C3C12D270A2DB /* Pods-NYTArticles.release mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release mock.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release mock.xcconfig"; sourceTree = "<group>"; };
 		72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTArticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A397EDE1A3618E73F3AE1BE1 /* Pods-NYTArticles.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release production.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release production.xcconfig"; sourceTree = "<group>"; };
@@ -70,15 +114,196 @@
 		3FBEDE181FE2D438006103AF /* NYTArticles */ = {
 			isa = PBXGroup;
 			children = (
-				3FBEDE191FE2D438006103AF /* AppDelegate.h */,
-				3FBEDE1A1FE2D438006103AF /* AppDelegate.m */,
-				3FBEDE2F1FE2D6A0006103AF /* Main.storyboard */,
-				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
-				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
-				3FBEDE271FE2D438006103AF /* Info.plist */,
-				3FBEDE281FE2D438006103AF /* main.m */,
+				3FBEDE3E1FE3BEDF006103AF /* Application */,
+				3FBEDE5A1FE3DB21006103AF /* Utilities */,
+				3FBEDE7F1FE3FFED006103AF /* Components */,
+				3FBEDE5C1FE3DB7F006103AF /* Screens */,
+				3FBEDE401FE3BEFD006103AF /* Resources */,
 			);
 			path = NYTArticles;
+			sourceTree = "<group>";
+		};
+		3FBEDE3E1FE3BEDF006103AF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE191FE2D438006103AF /* AppDelegate.h */,
+				3FBEDE1A1FE2D438006103AF /* AppDelegate.m */,
+				3FBEDE271FE2D438006103AF /* Info.plist */,
+				3FBEDE3F1FE3BEED006103AF /* Supporting Files */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3FBEDE3F1FE3BEED006103AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE281FE2D438006103AF /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FBEDE401FE3BEFD006103AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE411FE3BF04006103AF /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FBEDE411FE3BF04006103AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE221FE2D438006103AF /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3FBEDE431FE3C230006103AF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE4B1FE3D001006103AF /* NetworkManager.h */,
+				3FBEDE4C1FE3D001006103AF /* NetworkManager.m */,
+				3FBEDE4E1FE3D005006103AF /* RequestObjects */,
+				3FBEDE4F1FE3D015006103AF /* ResponseObjects */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3FBEDE4E1FE3D005006103AF /* RequestObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestObjects;
+			sourceTree = "<group>";
+		};
+		3FBEDE4F1FE3D015006103AF /* ResponseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE501FE3D06C006103AF /* Article */,
+			);
+			path = ResponseObjects;
+			sourceTree = "<group>";
+		};
+		3FBEDE501FE3D06C006103AF /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE511FE3D0E8006103AF /* ArticleListResponse.h */,
+				3FBEDE521FE3D0E8006103AF /* ArticleListResponse.m */,
+				3FBEDE541FE3D0F3006103AF /* ArticleResponse.h */,
+				3FBEDE551FE3D0F3006103AF /* ArticleResponse.m */,
+				3FBEDE771FE3EF21006103AF /* MediaResponse.h */,
+				3FBEDE781FE3EF21006103AF /* MediaResponse.m */,
+				3FBEDE741FE3EECF006103AF /* MediaMetadataResponse.h */,
+				3FBEDE751FE3EECF006103AF /* MediaMetadataResponse.m */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		3FBEDE5A1FE3DB21006103AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE431FE3C230006103AF /* Networking */,
+				3FBEDE891FE40352006103AF /* Categories */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3FBEDE5C1FE3DB7F006103AF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE301FE2D6A0006103AF /* LaunchScreen.storyboard */,
+				3FBEDE5D1FE3DB8B006103AF /* Article */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3FBEDE5D1FE3DB8B006103AF /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE5F1FE3DDB0006103AF /* DataManager */,
+				3FBEDE7A1FE3F0AD006103AF /* ViewModel */,
+				3FBEDE6E1FE3E4BC006103AF /* View */,
+				3FBEDE601FE3DDB6006103AF /* Controller */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		3FBEDE5F1FE3DDB0006103AF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE6A1FE3DE26006103AF /* ArticleDataManagerInterface.h */,
+				3FBEDE611FE3DDDB006103AF /* ArticleDataManager.h */,
+				3FBEDE621FE3DDDB006103AF /* ArticleDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		3FBEDE601FE3DDB6006103AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE641FE3DDEB006103AF /* ArticleListViewController.h */,
+				3FBEDE651FE3DDEB006103AF /* ArticleListViewController.m */,
+				3FBEDE851FE401D8006103AF /* ArticleListViewController.xib */,
+				3FBEDE671FE3DDF6006103AF /* ArticleDetailViewController.h */,
+				3FBEDE681FE3DDF6006103AF /* ArticleDetailViewController.m */,
+				3FBEDE871FE402A4006103AF /* ArticleDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FBEDE6E1FE3E4BC006103AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE6F1FE3E4D8006103AF /* ArticleTableViewCell.h */,
+				3FBEDE701FE3E4D8006103AF /* ArticleTableViewCell.m */,
+				3FBEDE711FE3E4D8006103AF /* ArticleTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FBEDE7A1FE3F0AD006103AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE7B1FE3F0BD006103AF /* ArticleModel.h */,
+				3FBEDE7C1FE3F0BD006103AF /* ArticleModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3FBEDE7F1FE3FFED006103AF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE8E1FE41A24006103AF /* ViewController */,
+				3FBEDE801FE3FFF3006103AF /* NavigationController */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3FBEDE801FE3FFF3006103AF /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE811FE4000B006103AF /* NYTNavigationController.h */,
+				3FBEDE821FE4000B006103AF /* NYTNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		3FBEDE891FE40352006103AF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE8B1FE4038C006103AF /* UIColor+NYTColors.h */,
+				3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3FBEDE8E1FE41A24006103AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE8F1FE41A81006103AF /* NYTViewController.h */,
+				3FBEDE901FE41A81006103AF /* NYTViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		6C5202FF71A110553092A1BA /* Frameworks */ = {
@@ -134,6 +359,7 @@
 		3FBEDE0E1FE2D438006103AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NYT;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Gergo Nemeth";
 				TargetAttributes = {
@@ -165,9 +391,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBEDE731FE3E4D8006103AF /* ArticleTableViewCell.xib in Resources */,
 				3FBEDE321FE2D6A0006103AF /* LaunchScreen.storyboard in Resources */,
 				3FBEDE231FE2D438006103AF /* Assets.xcassets in Resources */,
-				3FBEDE311FE2D6A0006103AF /* Main.storyboard in Resources */,
+				3FBEDE881FE402A4006103AF /* ArticleDetailViewController.xib in Resources */,
+				3FBEDE861FE401D8006103AF /* ArticleListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +410,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectiveSugar/ObjectiveSugar.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -191,6 +420,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectiveSugar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -256,8 +486,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBEDE631FE3DDDB006103AF /* ArticleDataManager.m in Sources */,
+				3FBEDE761FE3EECF006103AF /* MediaMetadataResponse.m in Sources */,
+				3FBEDE7D1FE3F0BD006103AF /* ArticleModel.m in Sources */,
+				3FBEDE561FE3D0F3006103AF /* ArticleResponse.m in Sources */,
+				3FBEDE531FE3D0E8006103AF /* ArticleListResponse.m in Sources */,
 				3FBEDE291FE2D438006103AF /* main.m in Sources */,
+				3FBEDE661FE3DDEB006103AF /* ArticleListViewController.m in Sources */,
+				3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */,
+				3FBEDE691FE3DDF6006103AF /* ArticleDetailViewController.m in Sources */,
+				3FBEDE8D1FE4038C006103AF /* UIColor+NYTColors.m in Sources */,
+				3FBEDE911FE41A81006103AF /* NYTViewController.m in Sources */,
+				3FBEDE831FE4000B006103AF /* NYTNavigationController.m in Sources */,
+				3FBEDE721FE3E4D8006103AF /* ArticleTableViewCell.m in Sources */,
 				3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */,
+				3FBEDE791FE3EF21006103AF /* MediaResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -392,7 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -463,7 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -528,7 +771,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -599,7 +842,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
@@ -664,7 +907,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NYTArticles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NYTArticles/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyt.NYTArticles$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(PRODUCT_NAME_PREFIX)$(TARGET_NAME)";
