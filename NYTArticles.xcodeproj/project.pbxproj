@@ -26,6 +26,7 @@
 		3FBEDE861FE401D8006103AF /* ArticleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE851FE401D8006103AF /* ArticleListViewController.xib */; };
 		3FBEDE881FE402A4006103AF /* ArticleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBEDE871FE402A4006103AF /* ArticleDetailViewController.xib */; };
 		3FBEDE8D1FE4038C006103AF /* UIColor+NYTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */; };
+		3FBEDE911FE41A81006103AF /* NYTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEDE901FE41A81006103AF /* NYTViewController.m */; };
 		E1281493C23AF9C2C29DDC8A /* Pods_NYTArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		3FBEDE871FE402A4006103AF /* ArticleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDetailViewController.xib; sourceTree = "<group>"; };
 		3FBEDE8B1FE4038C006103AF /* UIColor+NYTColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+NYTColors.h"; sourceTree = "<group>"; };
 		3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NYTColors.m"; sourceTree = "<group>"; };
+		3FBEDE8F1FE41A81006103AF /* NYTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTViewController.h; sourceTree = "<group>"; };
+		3FBEDE901FE41A81006103AF /* NYTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTViewController.m; sourceTree = "<group>"; };
 		511C87317D0C3C12D270A2DB /* Pods-NYTArticles.release mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release mock.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release mock.xcconfig"; sourceTree = "<group>"; };
 		72C2125B64D1E90DCCDE6556 /* Pods_NYTArticles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTArticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A397EDE1A3618E73F3AE1BE1 /* Pods-NYTArticles.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTArticles.release production.xcconfig"; path = "Pods/Target Support Files/Pods-NYTArticles/Pods-NYTArticles.release production.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +273,7 @@
 		3FBEDE7F1FE3FFED006103AF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3FBEDE8E1FE41A24006103AF /* ViewController */,
 				3FBEDE801FE3FFF3006103AF /* NavigationController */,
 			);
 			path = Components;
@@ -291,6 +295,15 @@
 				3FBEDE8C1FE4038C006103AF /* UIColor+NYTColors.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		3FBEDE8E1FE41A24006103AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEDE8F1FE41A81006103AF /* NYTViewController.h */,
+				3FBEDE901FE41A81006103AF /* NYTViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		6C5202FF71A110553092A1BA /* Frameworks */ = {
@@ -483,6 +496,7 @@
 				3FBEDE4D1FE3D001006103AF /* NetworkManager.m in Sources */,
 				3FBEDE691FE3DDF6006103AF /* ArticleDetailViewController.m in Sources */,
 				3FBEDE8D1FE4038C006103AF /* UIColor+NYTColors.m in Sources */,
+				3FBEDE911FE41A81006103AF /* NYTViewController.m in Sources */,
 				3FBEDE831FE4000B006103AF /* NYTNavigationController.m in Sources */,
 				3FBEDE721FE3E4D8006103AF /* ArticleTableViewCell.m in Sources */,
 				3FBEDE1B1FE2D438006103AF /* AppDelegate.m in Sources */,

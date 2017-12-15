@@ -1,5 +1,5 @@
 //
-//  ArticleDetailViewController.h
+//  NYTViewController.m
 //  NYTArticles
 //
 //  Created by Gergo Nemeth on 2017. 12. 15..
@@ -8,6 +8,17 @@
 
 #import "NYTViewController.h"
 
-@interface ArticleDetailViewController : NYTViewController
+@interface NYTViewController ()
+
+@end
+
+@implementation NYTViewController
+
+#pragma mark - Setting Data
+
+- (void)setObject:(id)object
+{
+    
+}
 
 @end

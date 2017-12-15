@@ -10,6 +10,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "ArticleDataManager.h"
 #import "ArticleTableViewCell.h"
+#import "ArticleDetailViewController.h"
 
 static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
 
@@ -37,6 +38,13 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
     [self setupNavigationBar];
     [self setupTableView];
     [self loadData];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
 }
 
 #pragma mark - Setup
@@ -118,7 +126,15 @@ static NSString * const articleCellIdentifier = @"ArticleTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"tableView:didSelectRowAtIndexPath:");
+    ArticleModel *article = self.allArticles[indexPath.row];
+    
+    // Instead of this solution we should use a navigator class.
+    // We would give the screen to the navigator where we want to navigate and some object we would like to pass
+    // and it would automatically instantiate the screen and would call the setObject: method on it with the desired
+    // object.
+    ArticleDetailViewController *detailViewController = [ArticleDetailViewController new];
+    [detailViewController setObject:article];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 #pragma mark - Actions

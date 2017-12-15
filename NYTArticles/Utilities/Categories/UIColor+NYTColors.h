@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  UIColor extension where we gather all the colors our application is using.
+ */
 @interface UIColor (NYTColors)
 
 + (UIColor *)nyt_navigationBarColor;

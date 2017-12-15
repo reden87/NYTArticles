@@ -6,8 +6,8 @@
 //  Copyright © 2017. Gergo Nemeth. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "NYTViewController.h"
 
-@interface ArticleListViewController : UIViewController
+@interface ArticleListViewController : NYTViewController
 
 @end
